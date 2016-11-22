@@ -1,0 +1,56 @@
+\section{Aufgabe 3 (Entwicklung)}
+
+\subsection{Teilaufgabe A)}
+\subsubsection{Aus wie vielen Systemen besteht eine Systemlandschaft mindestens,
+wenn nicht direkt in einem produktiven System entwickelt werden soll? }
+
+Eine SAP-Systemlandschaft muss aus mindestens 2 Systemen bestehen, wenn
+gewährleistet werden soll, dass die Entwicklung neuer Komponenten nicht auf
+Produktivitätsdaten zugreifen dürfen.
+
+Folgende Auflistung stellt eine Minimalkonfiguration dar:
+\begin{itemize}
+  \item Entwicklngssystem
+  	\begin{itemize}
+  	  \item Customizing-Mandant
+  	  \item Testing-Mandant
+  	  \item Schulungs-Mandant
+  	  \item Qualitätssicherungs-Mandant
+  	\end{itemize}
+  \item Produktivsystem
+  	\begin{itemize}
+  	  \item Produktions-Mandant
+  	\end{itemize}
+\end{itemize}
+
+\subsubsection{Welche Probleme tauchen bei dieser
+Minimalkonfiguration möglicherweise bei der Qualitätssicherung auf?}
+
+In dieser Konfiguration wird auf das separate Qualitätssicherungssystem QAS
+verzichtet. Änderungen an unabhängigen Daten, die im Customizing
+durchgeführt werden, können die Tests in der Qualitätssicherung
+behindern. Außerdem kann die Vollständigkeit der Transporte, aus dem
+Customizing, nicht vollständig sichergestellt werden. 
+
+\subsection{Teilaufgabe B)}
+\subsubsection{Welche Rolle spielt ein Entwicklungsauftrag im Zusammenhang mit der Organisation von
+Entwicklungsarbeiten?}
+
+Der Entwicklungsauftrag erfordert die Organisation von Arbeiten an einem oder
+mehreren Entwicklungssystemen um das Produktivsystem unberührt zu lassen.
+Hierbei übernimmt der Transport Organizer die Versionskontrolle. Bei Freigabe
+des Auftrags muss jeder Entwickler eine Dokumentation anlegen, welche Ziele,
+Status und Besonderheiten beinhaltet. Veränderungen an Objekten werden
+automatisch protokolliert.
+
+\subsubsection{Welche Rolle spielt eine Aufgabe?} 
+Eine Aufgabe ist eine einzelne Entwicklung, Korrektur oder Reparatur, welche mit
+den Änderungsaufträgen transportiert wird.
+
+\subsubsection{Wie bewerten Sie die Trennung zwischen Aufgabe und Auftrag?} 
+Die Aufgabe beschreibt ein zu veränderndes Objekt im Auftrag, so ist eine
+durchsichtige, strukturierte Vorgehensweise möglich. Die Trennung ermöglicht
+also eine effizientere Bearbeitung der jewiligen Auftragen im
+Entwicklungsauftrag.
+
+\clearpage
