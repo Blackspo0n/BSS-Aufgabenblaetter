@@ -1,0 +1,25 @@
+\documentclass[
+	toc=listof, 
+	toc=bibliography, % Literaturverzeichnis in das Inhaltsverzeichnis aufnehmen
+	footnotes=multiple, % Trennen von direkt aufeinander folgenden Fußnoten
+	parskip=half, % vertikalen Abstand zwischen Absätzen verwenden anstatt
+	% horizontale Einrückung von Folgeabsätzen
+	headlines=2.1
+]{scrartcl} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{uarial}
+
+\input{Meta.tex}
+\input{Allgemein/Packages.tex} 
+\input{Allgemein/Seitenstil.tex}
+\input{Allgemein/Befehle.tex}
+
+\begin{document}
+\input{Deckblatt.tex}
+\clearpage
+
+\pagenumbering{arabic}
+\input{Inhalt.tex} 
+
+\end{document}

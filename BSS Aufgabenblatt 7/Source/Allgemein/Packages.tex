@@ -1,0 +1,157 @@
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp} % Euro-Zeichen etc.
+\usepackage{lmodern} % bessere Fonts
+\usepackage{relsize} % SchriftgrÃ¶ÃŸe relativ festlegen
+\renewcommand{\familydefault}{\sfdefault}
+
+\PassOptionsToPackage{table}{xcolor}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{lscape}
+\newcolumntype{w}[1]{>{\raggedleft\hspace{0pt}}p{#1}} % Spaltendefinition rechtsbÃ¼ndig mit definierter Breite
+\usepackage[dvips,final]{graphicx} % Einbinden v on JPG-Grafiken ermÃ¶glichen
+\usepackage{graphics} % keepaspectratio
+\usepackage{floatflt} % zum UmflieÃŸen von Bildern
+\graphicspath{{Bilder/}} % hier liegen die Bilder des Dokuments
+\usepackage{amsmath,amsfonts} % Befehle aus AMSTeX fÃ¼r mathematische Symbole
+\usepackage{enumitem} % anpassbare Enumerates/Itemizes
+\usepackage{xspace} % sorgt dafÃ¼r, dass Leerzeichen hinter parameterlosen Makros nicht als Makroendezeichen interpretiert werden
+\usepackage{makeidx} % fÃ¼r Index-Ausgabe mit \printindex
+\usepackage{acronym} % es werden nur benutzte Definitionen aufgelistet
+\usepackage[table]{xcolor}
+\usepackage{hhline}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{listings}
+\usepackage{xcolor} 
+\usepackage{url} % URL verlinken, lange URLs umbrechen etc.
+\usepackage{chngcntr} % fortlaufendes Durchnummerieren der FuÃŸnoten
+\usepackage{ifthen} % bei der Definition eigener Befehle benÃ¶tigt
+\usepackage{todonotes} % definiert u.a. die Befehle \todo und \listoftodos
+\usepackage[square]{natbib} % wichtig fÃ¼r korrekte Zitierweise
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage{arrayjob}
+\usepackage{xmpincl}
+
+% Symbolverzeichnis
+\usepackage[intoc]{nomencl}
+\let\abbrev\nomenclature
+\renewcommand{\nomname}{AbkÃ¼rzungsverzeichnis}
+\setlength{\nomlabelwidth}{.25\hsize}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\setlength{\nomitemsep}{-\parsep}
+
+%copyright.xmp laden
+\includexmp{copyright}
+
+\pdfminorversion=5 % erlaubt das EinfÃ¼gen von pdf-Dateien bis Version 1.7, ohne eine Fehlermeldung zu werfen (keine Garantie fÃ¼r fehlerfreies Einbetten!)
+\usepackage[
+    bookmarks,
+    bookmarksnumbered,    
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    colorlinks=true, % diese Farbdefinitionen zeichnen Links im PDF farblich aus
+    linkcolor=WHSGreen, % einfache interne VerknÃ¼pfungen
+    anchorcolor=WHSGreen,% Ankertext
+    citecolor=WHSGreen, % Verweise auf LiteraturverzeichniseintrÃ¤ge im Text
+    filecolor=WHSGreen, % VerknÃ¼pfungen, die lokale Dateien Ã¶ffnen
+    menucolor=WHSGreen, % Acrobat-MenÃ¼punkte
+    urlcolor=WHSGreen, % diese Farbdefinitionen sollten fÃ¼r den Druck verwendet werden (alles% schwarz)
+    pdftex,
+    plainpages=false, % zur korrekten Erstellung der Bookmarks
+    pdfpagelabels=true, % zur korrekten Erstellung der Bookmarks
+    hypertexnames=false, % zur korrekten Erstellung der Bookmarks
+    linktocpage % Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
+]{hyperref}
+
+
+\hypersetup{
+    pdftitle={\titel},
+    pdfauthor={\autor},
+    pdftrapped={true},
+    pdfcreator={Texlipse},
+    pdfsubject={\untertitel},
+    pdfkeywords={\keywords},
+    pdfproducer={pdftex},
+}
+
+\definecolor{hellgelb}{rgb}{1,1,0.9}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,0.5,0}
+\definecolor{colString}{rgb}{1,0,0}
+
+\lstset{
+    float=hbp,
+	basicstyle=\footnotesize,
+    identifierstyle=\color{colIdentifier},
+    keywordstyle=\color{colKeys},
+    stringstyle=\color{colString},
+    commentstyle=\color{colComments},
+    backgroundcolor=\color{hellgelb},
+    columns=flexible,
+    tabsize=2,
+    frame=single,
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    breakautoindent=true,
+	captionpos=b,
+}
+\lstdefinelanguage{cs}{
+	sensitive=false,
+	morecomment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	morestring=[b]",
+	morekeywords={
+		abstract,event,new,struct,as,explicit,null,switch
+		base,extern,object,this,bool,false,operator,throw,
+		break,finally,out,true,byte,fixed,override,try,
+		case,float,params,typeof,catch,for,private,uint,
+		char,foreach,protected,ulong,checked,goto,public,unchecked,
+		class,if,readonly,unsafe,const,implicit,ref,ushort,
+		continue,in,return,using,decimal,int,sbyte,virtual,
+		default,interface,sealed,volatile,delegate,internal,short,void,
+		do,is,sizeof,while,double,lock,stackalloc,
+		else,long,static,enum,namespace,string},
+}
+\lstdefinelanguage{natural}{
+	sensitive=false,
+	morecomment=[l]{/*},
+	morestring=[b]",
+	morestring=[b]',
+	alsodigit={-,*},
+	morekeywords={
+		DEFINE,DATA,LOCAL,END-DEFINE,WRITE,CALLNAT,PARAMETER,USING,
+		IF,NOT,END-IF,ON,*ERROR-NR,ERROR,END-ERROR,ESCAPE,ROUTINE,
+		PERFORM,SUBROUTINE,END-SUBROUTINE,CONST,END-FOR,END,FOR,RESIZE,
+		ARRAY,TO,BY,VALUE,RESET,COMPRESS,INTO,EQ},
+}
+\lstdefinelanguage{php}{
+	sensitive=false,
+	morecomment=[l]{/*},
+	morestring=[b]",
+	morestring=[b]',
+	alsodigit={-,*},
+	morekeywords={
+		abstract,and,array,as,break,case,catch,cfunction,class,clone,const,
+		continue,declare,default,do,else,elseif,enddeclare,endfor,endforeach,
+		endif,endswitch,endwhile,extends,final,for,foreach,function,global,
+		goto,if,implements,interface,instanceof,namespace,new,old_function,or,
+		private,protected,public,static,switch,throw,try,use,var,while,xor
+		die,echo,empty,exit,eval,include,include_once,isset,list,require,
+		require_once,return,print,unset},
+}
+
+
+\pdftrailerid{}
+\pdfsuppressptexinfo15
