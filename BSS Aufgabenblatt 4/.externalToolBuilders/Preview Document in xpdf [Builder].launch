@@ -55,8 +55,6 @@
 <stringAttribute key="none.format" value="pdf"/>
 <stringAttribute key="none.forward" value="false"/>
 <stringAttribute key="none.inverse" value="no"/>
-<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
-<booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
 <stringAttribute key="sumatra PDF.arguments" value="-reuse-instance %file"/>
 <stringAttribute key="sumatra PDF.command" value=""/>
 <stringAttribute key="sumatra PDF.ddeCloseCommand" value=""/>
