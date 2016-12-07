@@ -1,0 +1,24 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{0.3em}
+\begin{tabular}{|L{3.5cm}L{6cm}L{3.5cm}L{3.5cm}|}
+\rowcolor{heading}\color{white}\textbf{Aktivität} &
+\color{white}\textbf{Erläuterung} &
+\color{white}\textbf{Verantwortliche/Beteiligte} &	
+\color{white}\textbf{SAPTransaktion(en)}\\
+\hline
+Anlegen neuer Lieferant & Die Stammdaten für einen neuen Lieferanten werden angelegt. Dabei werden Daten für Vertrieb und Buchhaltung erfasst. & Einkauf, Buchhaltung & XK01 (Gesamt) MK01 (Nur Einkauf) \\ \hline
+Anlegen Material & Der Materialstammsatz für eine neue Handelsware wird angelegt. Hier werden je nach Auswahl Daten für Vertrieb, Einkauf, Disposition, Lager und / oder Buchhaltung erfasst. & Einkauf, Vertrieb, Buchhaltung, Lager & MMH1 (Handelsware) \\ \hline
+Ändern Material & Für ein bereits angelegtes Material werden die Vertriebsdaten für einen weiteren Standort mit anderen Konditionen kopiert. & Einkauf, Vertrieb, Buchhaltung, Lager & MM02 (Sofort) \\ \hline
+Anzeigen Bedarfs-/Bestandsliste & Bedarfs- und Bestandslisten sowie die Nachfrage und Bestellanforderungen eines Produktes werden in einem Bericht angezeigt. & Einkauf, Vertrieb, Buchhaltung, Lager & MD04 (Bedarfs- / Bestandsliste) \\ \hline
+Anlegen Bestellanforderung & Bestellanforderungen für benötigte Waren werden formuliert. & Einkauf, Lager, Buchhaltung & ME51N (Anlegen) \\ \hline
+Anlegen Anfrage & Anfragen für Bestellanforderungen werden formuliert. & Einkauf, Buchhaltung & ME41 (Anlegen) \\ \hline
+Anlegen Angebot von Lieferanten & Bestellanfragen werden ins Beschaffungssystem eingepflegt, um zu vergleichen, auf welchen Lieferanten die Wahl fällt. & Einkauf, Buchhaltung & ME47 (Pflegen) \\ \hline
+Preisbezogene Angebotsbewertung & Angebotspreisspiegel aus Angeboten einzelner Lieferanten können generiert werden. Das beste Angebot wird durch Ablehnen der schlechteren Angebote bestimmt. & Einkauf & ME49 (Preisspiegel) \\ \hline
+Anlegen Bestellung mit Bezug auf Anfrage & Legt eine auf ein Angebot bezogene Bestellung an. & Einkauf & ME21N (Lieferant/Lieferwerk bekannt) \\ \hline
+\end{tabular}
