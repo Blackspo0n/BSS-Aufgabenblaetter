@@ -6,16 +6,18 @@
 
 \setlength{\extrarowheight}{2pt}
 \setlength{\tabcolsep}{0.3em}
-\begin{tabular}{|L{3.5cm}L{6cm}L{3.5cm}L{3.5cm}|}
+\begin{tabular}{|L{3.5cm}L{9cm}L{3.5cm}|}
 \rowcolor{heading}\color{white}\textbf{Aktivität} &
 \color{white}\textbf{Erläuterung} &
-\color{white}\textbf{Verantwortliche/Beteiligte} &	
 \color{white}\textbf{SAPTransaktion(en)}\\
 \hline
-Anzeigen Bestellung & Die auf ein Angebot bezogene Bestellung wird angezeigt. & Einkauf & ME23N (Anzeigen) \\ \hline
-Buchen Wareneingang zur Bestellung & Die bestellten Waren werden bei Bestandseingang in den Wareneingang gebucht. Der Bestand erhöht sich und ein Finanzbelegt wird erstellt. & Lager, Buchhaltung & MIGO\_GR (WE zur Bestellung (MIGO)) \\ \hline
-Prüfen physischer Wareneingang & Ein Überblick über den Bestand wird organisationsebenenübergreifend gewährt. & Lager & MMBE (Bestandsübersicht) \\ \hline
-Anlegen und Buchen der ersten Lieferantenrechnung & Eine Verbindlichkeit gegenüber dem Lieferanten wird erstellt. Eine Lieferantenrechnung wird erstellt. & Buchhaltung & MIRO (Logistik-Rechnungsprüfung) \\ \hline
-Buchen Zahlungsausgang & Verbindlichkeiten werden durch Zahlung beglichen. & Buchhaltung & F-53 (Buchen) \\ \hline
-Anzeigen Kreditorensaldo & Anzeigen einer Soll- und Haben-Buchung, sowie Möglichkeit zur Bestätigung dieser. & Buchhaltung & FK10N (Salden anzeigen) \\ \hline
+
+Planauftrag in Fertigungsauftrag umwandeln & Änderung von Planungsauftrag in Fertigungsauftrag. Direkte Anzeige des umgewandelten Planungsauftrags als Fertigungsauftrag. & MD04 (Bedarfs-/Bestandsliste) \\ \hline
+Wareneingang ins Lager buchen & Buchung der Wareneingänge im Lager. Dabei werden neue Materialien erfasst und deren Lagerort, sowie Anzahl festgelegt. & MB1C (Sonstige) \\ \hline
+Warenausgang zum Fertigungsauftrag buchen & Buchung des Warenausgangs auf den Fertigungsauftrag. Dabei werden die einzelnen Komponenten und ihre Menge aufgelistet. & MB1A (Warenausgang) \\ \hline
+Fertigungsauftragsstatus anzeigen & Einsehen des Satus, des Fertigungsauftrags, mit Hilfe der Fertigungsauftragsnummer. Weiter kann man dort Dokumente wie Material-und Finanzbelege einsehen. & CO03 (Anzeigen) \\ \hline
+Produktionsfertigstellung rückmelden & Rückmeldung zur Fertigstellung des Fertigungsauftrages. Erst möglich nach Fertigstellung des Fertigungsauftrags. & CO15 (Zum Auftrag) \\ \hline
+Wareneingang zum Fertigungsauftrag & Nach Fertigung des Produkts wird dieses in das Fertigerzeugnislager gebucht. Zudem erhalten wir alle Details zum Fertigungsablauf des Produktes. & MB31 (Wareneingang) \\ \hline
+Kosten Fertigungsauftrag anzeigen & Übersicht über alle Kosten die beim Fertigungsauftrag entstanden sind. & CO03 (Anzeigen) \\ \hline
+Kosten Fertigungsauftrag abrechnen & Ermittlung des Gewinns, durch Aufteilung der Kosten zu den einzelnen Kostenträgern. & KO88 (Einzelbearbeitung) \\ \hline
 \end{tabular}

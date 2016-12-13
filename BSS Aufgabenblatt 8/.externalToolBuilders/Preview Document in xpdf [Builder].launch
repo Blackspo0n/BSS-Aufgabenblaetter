@@ -11,6 +11,17 @@
 <stringAttribute key="acroread.format" value="pdf"/>
 <stringAttribute key="acroread.forward" value="false"/>
 <stringAttribute key="acroread.inverse" value="no"/>
+<stringAttribute key="evince.arguments" value="&quot;%file&quot;"/>
+<stringAttribute key="evince.command" value="/usr/bin/evince"/>
+<stringAttribute key="evince.ddeCloseCommand" value=""/>
+<stringAttribute key="evince.ddeCloseServer" value=""/>
+<stringAttribute key="evince.ddeCloseTopic" value=""/>
+<stringAttribute key="evince.ddeViewCommand" value=""/>
+<stringAttribute key="evince.ddeViewServer" value=""/>
+<stringAttribute key="evince.ddeViewTopic" value=""/>
+<stringAttribute key="evince.format" value="pdf"/>
+<stringAttribute key="evince.forward" value="false"/>
+<stringAttribute key="evince.inverse" value="no"/>
 <stringAttribute key="gv.arguments" value="%file"/>
 <stringAttribute key="gv.command" value=""/>
 <stringAttribute key="gv.ddeCloseCommand" value=""/>

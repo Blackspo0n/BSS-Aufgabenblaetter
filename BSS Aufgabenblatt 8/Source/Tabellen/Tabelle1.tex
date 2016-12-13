@@ -6,19 +6,24 @@
 
 \setlength{\extrarowheight}{2pt}
 \setlength{\tabcolsep}{0.3em}
-\begin{tabular}{|L{3.5cm}L{6cm}L{3.5cm}L{3.5cm}|}
+\begin{tabular}{|L{3.5cm}L{9cm}L{3.5cm}|}
 \rowcolor{heading}\color{white}\textbf{Aktivität} &
 \color{white}\textbf{Erläuterung} &
-\color{white}\textbf{Verantwortliche/Beteiligte} &	
 \color{white}\textbf{SAPTransaktion(en)}\\
 \hline
-Anlegen neuer Lieferant & Die Stammdaten für einen neuen Lieferanten werden angelegt. Dabei werden Daten für Vertrieb und Buchhaltung erfasst. & Einkauf, Buchhaltung & XK01 (Gesamt) MK01 (Nur Einkauf) \\ \hline
-Anlegen Material & Der Materialstammsatz für eine neue Handelsware wird angelegt. Hier werden je nach Auswahl Daten für Vertrieb, Einkauf, Disposition, Lager und / oder Buchhaltung erfasst. & Einkauf, Vertrieb, Buchhaltung, Lager & MMH1 (Handelsware) \\ \hline
-Ändern Material & Für ein bereits angelegtes Material werden die Vertriebsdaten für einen weiteren Standort mit anderen Konditionen kopiert. & Einkauf, Vertrieb, Buchhaltung, Lager & MM02 (Sofort) \\ \hline
-Anzeigen Bedarfs-/Bestandsliste & Bedarfs- und Bestandslisten sowie die Nachfrage und Bestellanforderungen eines Produktes werden in einem Bericht angezeigt. & Einkauf, Vertrieb, Buchhaltung, Lager & MD04 (Bedarfs- / Bestandsliste) \\ \hline
-Anlegen Bestellanforderung & Bestellanforderungen für benötigte Waren werden formuliert. & Einkauf, Lager, Buchhaltung & ME51N (Anlegen) \\ \hline
-Anlegen Anfrage & Anfragen für Bestellanforderungen werden formuliert. & Einkauf, Buchhaltung & ME41 (Anlegen) \\ \hline
-Anlegen Angebot von Lieferanten & Bestellanfragen werden ins Beschaffungssystem eingepflegt, um zu vergleichen, auf welchen Lieferanten die Wahl fällt. & Einkauf, Buchhaltung & ME47 (Pflegen) \\ \hline
-Preisbezogene Angebotsbewertung & Angebotspreisspiegel aus Angeboten einzelner Lieferanten können generiert werden. Das beste Angebot wird durch Ablehnen der schlechteren Angebote bestimmt. & Einkauf & ME49 (Preisspiegel) \\ \hline
-Anlegen Bestellung mit Bezug auf Anfrage & Legt eine auf ein Angebot bezogene Bestellung an. & Einkauf & ME21N (Lieferant/Lieferwerk bekannt) \\ \hline
-\end{tabular}
+Materialstammsatz ändern & In der Sicht Disposition 3 müssen die Felder Strategiegruppe, Verrechnungsmodus und VerInt Rückwärts gepflegt werden & MM02 \\ \hline
+Arbeitsplan ändern & Zuordnung der Komponenten zu den einzelnen Arbeitsschritten, dies kann für jeden Komponenten einzeln erfolgen, es ist aber auch mehrfach Auswahl möglich. Bei diesem Prozess ist jeder Prozessschritt von dem vorangegangenen abhängig. & CA02 (Ändern) \\ \hline
+Produktgruppe anzeigen & Anzeigen der Unterteilung von Produkten in Produktgruppen. Dies hilft beim Planen auf höheren Aggregationsebenen. & MC85 (Anzeigen) \\ \hline
+Absatz- und Produktionsgrobplan anlegen  & Planungswerkzeug, welches der Absatz- bzw. Produktionsplanung dient. Somit plant das System auf Grundlage der Vergangenheitswerte die Menge an Produkten, welche gefertigt werden muss. 
+
+Werkzeug zur Planung der Produktion im Bezug auf erwarteten Absatz.
+Die Planung kann dabei auch grafisch dargestellt werden. & MC82 (Ändern)
+Version A00 \\ \hline
+Absatz-/Grobplanung zu Programmplanung übergeben & Die Programmplanung ermöglicht es eine detaillierte, statt lediglich einer groben Planung vor zu nehmen. Dabei wird die entsprechende Produktgruppe auf die individuellen Komponenten herunter gebrochen, welche zur ausgewählten Gruppe gehören. Der Planer ist hierbei in der Lage, die Ergebnisse der Planung zu verändern, bevor er diese (manuell) sichert. & MC75 (Überg. Progr. Pl. PG) \\ \hline
+Programmplanung anzeigen & Überprüfung des Planprimärbedarfs der Produktgruppen.  & MD63 (Anzeigen) \\ \hline
+Leitteileplanung und Materialbedarfsplanung starten & Planung der Leitteile und des Materialbedarfs. Nach Planung werden alle Parameter zu der Planung angezeigt. & MD41 (Einzelpl. Mehrstufig) \\ \hline
+Bedarfs/Bestandsliste anzeigen & Übersicht alle Planungs-und Fertigungsaufträge zum gewählten Material. Sowie graphische Anzeige der Einzelaufträge.
+ & MD04 (Bedarfs-/Bestandsliste) \\ \hline
+ \end{tabular}
+
+
