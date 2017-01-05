@@ -1,0 +1,38 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{0.3em}
+\begin{tabular}{|L{3.5cm}L{9cm}L{3.5cm}|}
+\rowcolor{heading}\color{white}\textbf{Aktivität} &
+\color{white}\textbf{Erläuterung} &
+\color{white}\textbf{SAPTransaktion(en)}\\
+\hline
+Stückliste anlegen &
+Legt eine Stückliste für das übergebene Material an und bietet die Möglichkeit andere Stücklisten als Vorlage zu übernehmen. Weiter ist man mit der Option Alternative in der Lage alternative Stücklisten zu erstellen. &
+CS01 (Anlegen) \\
+\hline
+Arbeitsplan anlegen & 
+Legt einen Arbeitsplan basierend auf eine Stückliste an. Dabei können
+Normalarbeitspläne, Standardpläne Linienpläne und Standardlinienpläne angelegt werden. &
+CA01 (Anlegen)\\
+\hline
+Materialkalkulation mit Mengengerüst anlegen & 
+Im Produktkosten-Controlling werden die Herstellkosten und die Selbstkosten je
+produzierter Einheit berechnet. Produktkosten werden automatisch mithilfe der Stücklisten und Arbeitspläne aus der Produktionsplanung kalkuliert. &
+CK11N (Anlegen)\\
+\hline
+Vormerken der Preisfortschreibung & 
+Mithilfe der Preisfortschreibung wird das Ergebnis der Erzeugnis Kalkulation in den Materialstammsatz übertragen. Die Fortschreibung besteht dabei aus zwei Schritten, der Vormerkung und der Freigabe. &
+CK24 (Preisfortschreibung)\\
+\hline
+Freigeben Preisfortschreibung & Freigabe der zuvor angelegten Preisfortschreibung & CK24 (Preisfortschreibung)\\
+\hline
+Anzeigen Materialstamm (Für Screenshot) & Zeigt zu einem Material die gewünschten Datenblätter, wie zum Beispiel Kalkulationen, an & MM03 (Anzeigen)\\
+\hline
+
+ \end{tabular}
+
