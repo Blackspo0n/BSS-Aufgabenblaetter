@@ -1,0 +1,27 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{0.3em}
+\begin{tabular}{|L{3.5cm}L{9cm}L{3.5cm}|}
+\rowcolor{heading}\color{white}\textbf{Aktivität} &
+\color{white}\textbf{Erläuterung} &
+\color{white}\textbf{SAPTransaktion(en)}\\
+\hline
+\textbf{Anlegen der Hilfskostenstelle} & Für die Energiekosten wird eine Hilfskostenstelle eingerichtet, welche bei der Verteilung auf die beiden Kostenstellen Montage und Wartung helfen soll. & KS01 (Anlegen) \\ \hline
+\textbf{Anlegen Statistischer Kennzahl} & Weil die Kosten der Kantine für zwei Kostenstellen 
+eingestuft werden, ist die Fläche, für welche die Energiekosten angefallen sind, die Bezugsgröße  
+für die Kostenabschätzung. Deshalb muss eine statistische Kennzahl für diesen Zweck erstellt werden. & KK01 (Anlegen) \\ \hline
+\textbf{Anlegen Sekundäre Kostenarten} & Erstellen von zwei Kostenarten, die erste ist für die Umlage und die zweite für die Verrechnung.
+Denn sonst existiert ein Konflikt zwischen Umlage und Verrechnung. & KA06 (Anlegen Sekundär) \\ \hline
+\textbf{Anlegen Leistungsart} & Anlegen der Leistungsart, welche im diesem Fall in Quadratmeter zu bemessen ist. Damit wird die Fläche, welche mit Energie versorgt wird beschrieben. & KL01 (Anlegen) \\ \hline
+\textbf{Anlegen Kostenstellengruppe} & Die Kostenstellengruppe besteht hier lediglich aus Montage und Wartung. Denn auf diese Kostenstellen werden später die Kosten der Hilfskostenstelle aufgeteilt. & KSH1 (Anlegen) \\ \hline
+\textbf{Planung der Leistungsausbringung } & Plant die Leistungsausbringung von 3000qm, als zu versorgende Fläche. & KP26 (Ändern) \\ \hline
+\textbf{Planung von Kosten} & Planung der Kosten von 60.000 für die auszubringende Leistung. Hierbei haben wir die Kosten Energiekosten als Aufwand Versorgung eingetragen, da es uns nicht möglich war die selbsterstellte Kostenart Strom zu verwenden. Die Hilfskostenstelle Stromkosten 017-3 trägt nun Kosten in Höhe von 60.000 USD. & KP06 (Ändern) \\ \hline
+\textbf{Planung der innerbetrieblichen Leistungsaufnahme} & Plant die Quadratmeter-Zahl der Kostenstellen Montage und Wartung, um später die Kosten im Verhältnis zur erhaltenen Leistung aufzuteilen. & KP06 (Ändern) -  Layout 2 \\ \hline
+\textbf{Überprüfung der Planung} & Überprüfen ob der Hilfskostenstelle die korrekten Werte zugewiesen wurden.
+Wenn hier ein Fehler zu erkennen ist, ist er noch einfach zu beheben, denn die Umlage wurde noch nicht erzeugt. & KSBL (Kostenstellen: Planungsübersicht) \\ \hline
+\end{tabular}

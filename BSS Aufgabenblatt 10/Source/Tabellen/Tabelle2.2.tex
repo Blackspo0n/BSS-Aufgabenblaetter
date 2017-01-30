@@ -1,0 +1,19 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{0.3em}
+\begin{tabular}{|L{3.5cm}L{9cm}L{3.5cm}|}
+\rowcolor{heading}\color{white}\textbf{Aktivität} &
+\color{white}\textbf{Erläuterung} &
+\color{white}\textbf{SAPTransaktion(en)}\\
+\hline
+\textbf{Anlegen der Umlage} & Umlage der Hilfskostenstelle, als Sender, an die Kostenstellengruppe, als Empfänger.
+Man hat hier einen Überblick über die Anzahl der Sender und Empfänger und kann die Umlage nochmals auf Korrektheit überprüfen. Zudem wird man auch vom System auf Fehler hingewiesen. & KSUB (Umlage) \\ \hline
+\textbf{Überprüfung der Umlageergebnisse} & Überprüfung der Ergebnisse der zuvor durchgeführten Umlage, um im nächsten Schritt den Tarif zu errechnen und die Aufteilung der Kosten abschließen zu können. & KSBL (Kostenstellen: Planungsübersicht) \\ \hline
+\textbf{Tarifermittlung der beiden Leistungsarten} & Ermittelt den Tarifwert und rechnet diesen, in diesem Fall nach Quadratmeter, auf die von der jeweiligen Kostenstelle beanspruchten Wert um. & KSPI (Tarifermittlung) \\ \hline
+\textbf{Prüfen der Auswirkungen Tarifermittlung} & Die zu überprüfende Tarifermittlung ist als Screenshot, unter dieser Tabelle, hinzugefügt. Die Verrechnung der Stunden und die Tarifermittlung haben funktioniert. Denn als zu verrechnende Wert ergibt sich als Summe 60.000 und bei der Anzahl der Quadratmeter 3.000. & KSBL (Kostenstellen: Planungsübersicht) \\ \hline
+\end{tabular}
