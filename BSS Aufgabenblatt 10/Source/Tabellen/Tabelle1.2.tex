@@ -1,0 +1,19 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{0.3em}
+\begin{tabular}{|L{3.5cm}L{9cm}L{3.5cm}|}
+\rowcolor{heading}\color{white}\textbf{Aktivität} &
+\color{white}\textbf{Erläuterung} &
+\color{white}\textbf{SAPTransaktion(en)}\\
+\hline
+\textbf{Überprüfung der Planung} & Alle Kostenstellen wurden mit Primärkosten belastet. Weiterhin sehen Sie  die  Gesamtbelastung  und die interne Verteilungsmenge in der Wartung  und Montage. & KSBL (Kostenstellen: Planungsübersicht) \\ \hline
+\textbf{Anlegen der Umlage} & Legt eine Umlage auf eine Kostenstelle an. & KSUB (Umlage) \\ \hline
+\textbf{Überprüfung der Umlageergebnisse} & Überprüft die die Ergebnisse der Umlage. & KSBL (Kostenstellen: Planungsübersicht) \\ \hline
+\textbf{Tarifermittlung der beiden Leistungsarten} & Ermittelt die Tarife der Leistungsarten. & KSPI (Tarifermittlung \\ \hline
+\textbf{Prüfen der Auswirkungen Tarifermittlung} & Überprüft die Ergebnisse der Tarifermittlung. & KSBL (Kostenstellen: Planungsübersicht) \\ \hline
+\end{tabular}

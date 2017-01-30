@@ -1,0 +1,25 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{0.3em}
+\begin{tabular}{|L{3.5cm}L{9cm}L{3.5cm}|}
+\rowcolor{heading}\color{white}\textbf{Aktivität} &
+\color{white}\textbf{Erläuterung} &
+\color{white}\textbf{SAPTransaktion(en)}\\
+\hline
+\textbf{Anlegen Statistischer Kennzahl} & Weil die Kosten der Kantine für drei Kostenstellen 
+eingestuft werden, ist die Anzahl der Mitarbeiter die Bezugsgröße  
+für die Kostenabschätzung. Sie müssen deshalb eine statistische Kennzahl 
+für diesen Zweck erstellen. & KK01 (Anlegen) \\ \hline
+\textbf{Anlegen Sekundäre Kostenarten} & Die Verrechnung der internen Kosten - und Leistungsströme erfolgt in SAP ERP System stets über sekundäre Kostenarten. Eine Kostenart klassifiziert den zweckbezogenen und bewerteten Verbrauch von Produktionsfaktoren, innerhalb eines Kostenrechnungskreises. Im Gegensatz zur primären  Kostenart haben die sekundären Kostenarten keine entsprechende  kostenrelevante Kontenplanposition (GuV -Konto mit gleicher Nummer). & KA06 (Anlegen Sekundär) \\ \hline
+\textbf{Anlegen Leistungsart} & Leistungsarten sind Organisationseinheiten innerhalb des Controlling-Bereichs, welche die ausgeführte Leistung der Kostenstelle klassifiziert. Als  Maßeinheiten werden sie eingesetzt, um interne Aktivitäten zuzuordnen. & KL01 (Anlegen) \\ \hline
+\textbf{Anlegen Kostenstellengruppe} & Kostenstellen können nach alternativen Gesichtspunkten zu Kostenstellengruppen zusammengefasst werden, um die Gliederung des Unternehmens in Kostenstellen im SAP -System darzustellen. Mit Hilfe der  Gruppen können Kostenstellenhierarchien gebildet werden, die  Entscheidungs-, Verantwortungs- und Steuerungsbereiche, nach den  jeweiligen Anforderungen des Unternehmens zusammenfassen. & KSH1 (Anlegen) \\ \hline
+\textbf{Planung der Mitarbeiteranzahl} & Plant die Anzahl der Mitarbeiter, die in den Abteilungen arbeiten, welche den vorher erstellten Kostenstellen zugeordnet sind. & KP46 (Ändern) \\ \hline
+\textbf{Planung der Leistungsausbringung} & Plant die Leistungsausbringung für Wartung und Montage. & KP26 (Ändern) \\ \hline
+\textbf{Planung von Primärkostenaufnahme} & Plant die Primärkostenaufnahmen für die Kantine, die Montage und die Wartung. & KP06 (Ändern) \\ \hline
+
+\end{tabular}
